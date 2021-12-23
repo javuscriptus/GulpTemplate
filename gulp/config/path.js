@@ -9,24 +9,31 @@ const srcFolder = `./src`; // Путь к папке с исходниками
 export const path = {
     build: {
         js: `${buildFolder}/js/`,
+        images: `${buildFolder}/img/`,
         html: `${buildFolder}/`,
         css: `${buildFolder}/css/`,
-        files: `${buildFolder}/files/`,
+        fonts: `${buildFolder}/fonts/`,
+
     },
     src: {
         js: `${srcFolder}/js/app.js`,
+        images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
+        svg: `${srcFolder}/img/**/*.svg`,
         html: `${srcFolder}/*.html`,
         scss: `${srcFolder}/scss/style.scss`,
-        files: `${srcFolder}/files/**/*.*`, 
+        svgicons: `${srcFolder}/svgicons/*.svg`,
     },
     watch: {
         js: `${srcFolder}/js/**/*.js`,
+        images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
         html: `${srcFolder}/**/*.html`,
         scss: `${srcFolder}/scss/**/*.scss`,
-        files: `${srcFolder}/files/**/*.*`, 
+
     },
     clean: buildFolder,
     buildFolder: buildFolder,
     srcFolder: srcFolder,
     rootFolder: rootFolder,
 }
+
+// https://github.com/javuscriptus

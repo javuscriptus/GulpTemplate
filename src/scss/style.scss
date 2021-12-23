@@ -1,12 +1,5 @@
 $black: #000;
 $white: #fff;
 
-body {
-    background-color: $black;
+@import "fonts";
 
-    h1 {
-        color: $white;
-    }
-
-    background: url("@img/1.png") 0 0 no-repeat;
-}

@@ -1,4 +1,5 @@
-// Проверка поддержки webp, добавление класса webp или no-webp для HTML
+// Проверка поддержки webp в браузере
+// Добавление класса webp или no-webp для тега HTML
 export const isWebp = () => {
     // Проверка поддержки webp
     const testWebP = (callback) => {
@@ -14,3 +15,5 @@ export const isWebp = () => {
         document.documentElement.classList.add(className)
     })
 }
+
+// https://github.com/javuscriptus
